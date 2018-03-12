@@ -20,7 +20,7 @@ header ul {
 header ul li {
     text-decoration: none;
     display: inline;
-    margin: 0 60px;
+    margin: 0 30px;
     
 }
 
@@ -36,7 +36,7 @@ header ul li a:hover {
 #hero-wrapper {
     padding: 0;
     background-color: #f5e60a;
-    height: 600px;
+    height: 400px;
     width: 100%;
 
 }
@@ -46,7 +46,7 @@ header ul li a:hover {
     background-image: url("../images/something.png");
     background-repeat:no-repeat;
     left: 50px;
-    top: 75px;
+    top: 40px;
     width: 390px;
     height: 200px;
     color: black;
@@ -67,7 +67,7 @@ header ul li a:hover {
 
 #silouette {
     position: absolute;
-    left: 190px;
+    left: 0px;
 
 }
 
