@@ -5,8 +5,7 @@ body {
 }
 
 header {
-    background-color: #ffee00;
-    border-bottom: solid #b52332 5px;
+    background-color: black;
 
 }
 
@@ -50,8 +49,8 @@ header ul li a:hover {
     width: 390px;
     height: 200px;
     color: black;
-    padding: 20px 0 0 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 0 0 20px;
+    font-family: 'Black Ops One', cursive;
 
 }
 
@@ -73,6 +72,7 @@ header ul li a:hover {
 
 #content-wrapper {
     padding: 0;
+    color: white;
 
 }
 
