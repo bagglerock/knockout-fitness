@@ -1,78 +1,111 @@
-body {
-    background-color: black;
-    width: 1410px;
-
-}
-
 header {
+    text-align: center;
+}
+
+
+#nav-area {
     background-color: black;
-
+    border-top: solid #b52332 2px;
+    border-bottom: solid #b52332 2px;
+    margin-top: 10px; 
+    color: white;
+    text-align: center;
 }
 
-header ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 25px 0 0 0;
-        font-size: 20px;
+#nav-area {
+    padding-top: 10px;
 }
 
-header ul li {
-    text-decoration: none;
+#nav-area ul{
+    list-style-type: none;
+}
+
+#nav-area ul:last-child {
+    border: none;
+}
+
+
+#nav-area ul li {
+    border-right: solid white 2px;
     display: inline;
-    margin: 0 30px;
+    padding: 0 40px 0 0;
+    margin: 0 20px;
     
 }
 
-header ul li a {
+#nav-area ul li:last-child {
+    border: none;
+}
+
+#nav-area ul li a {
+    text-decoration: none;
     color: #b52332;
 }
 
-header ul li a:hover {
+#nav-area ul li a:hover {
     text-decoration: none;
-    color: black;
+    color: #f5e60b;
 }
 
 #hero-wrapper {
-    padding: 0;
-    background-color: #f5e60a;
-    height: 400px;
-    width: 100%;
+    background-color: #f5e60b;
+    opacity: .9;
+}
 
+#hero-banner {
+    background-size: cover;
+    background-image: url("../images/silouette.png");
+    height: 400px;
 }
 
 #quote {
     position: absolute;
-    background-image: url("../images/something.png");
-    background-repeat:no-repeat;
+    top: 105px;
     left: 50px;
-    top: 40px;
-    width: 390px;
-    height: 200px;
-    color: black;
-    padding: 30px 0 0 20px;
+    width: 400px;
     font-family: 'Black Ops One', cursive;
-
 }
 
-#logo-wrapper {
-    padding: 0;
-
-}
-
-#logo {
-    float: left;
-
-}
-
-#silouette {
-    position: absolute;
-    left: 0px;
-
-}
-
-#content-wrapper {
-    padding: 0;
+#section-1-wrapper{
     color: white;
-
+    padding: 40px 0;
+    background-color: black;
+    line-height: 40px;
+    
 }
+
+#section-2-wrapper{
+    
+    color: white;
+    padding: 40px 0;
+    background-color: #b52332;
+    line-height: 40px;
+}
+
+#section-3-wrapper{
+    
+    color: black;
+    padding: 40px 0;
+    background-color: white;
+    line-height: 40px;
+}
+
+#section-4-wrapper{
+    
+    color: black;
+    padding: 40px 0;
+    background-color: #f5e60b;
+    line-height: 40px;
+}
+
+#footer-wrapper{
+    
+    color: white;
+    padding: 40px 0;
+    background-color: black;
+    line-height: 40px;
+    text-align: center;
+}
+
+
 
