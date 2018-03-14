@@ -1,5 +1,12 @@
 header {
     text-align: center;
+    word-spacing: 30px;
+}
+
+p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+
 }
 
 
@@ -49,12 +56,12 @@ header {
 
 #hero-wrapper {
     background-color: #f5e60b;
-    opacity: .9;
 }
 
 #hero-banner {
     background-size: cover;
     background-image: url("../images/silouette.png");
+    background-repeat: no-repeat;
     height: 400px;
 }
 
@@ -74,6 +81,11 @@ header {
     
 }
 
+#building-front {
+    float: left;
+    margin-right: 20px;
+}
+
 #section-2-wrapper{
     
     color: white;
@@ -82,12 +94,22 @@ header {
     line-height: 40px;
 }
 
+#muay-thai {
+    float: right;
+    margin-left : 20px;
+}
+
 #section-3-wrapper{
     
     color: black;
     padding: 40px 0;
     background-color: white;
     line-height: 40px;
+}
+
+#knee-2-the-face{
+    float: left;
+    margin-right: 20px;
 }
 
 #section-4-wrapper{
