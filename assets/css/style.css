@@ -16,6 +16,7 @@ p {
 
 .section-title {
     border-bottom: 5px solid black;
+    margin-bottom: 30px;
 }
 
 #section-1 .section-title {
