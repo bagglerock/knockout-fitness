@@ -9,6 +9,19 @@ p {
 
 }
 
+.section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section-title {
+    border-bottom: 5px solid black;
+}
+
+#section-1 .section-title {
+    border-bottom: 5px solid white;
+}
+
 .iframe-map {
     position: relative;
     height: 0;
@@ -126,9 +139,10 @@ p {
     line-height: 40px;
 }
 
-#knee-2-the-face{
+#grappling-photo {
     float: left;
     margin-right: 20px;
+
 }
 
 #section-4-wrapper{
@@ -137,6 +151,25 @@ p {
     padding: 40px 0;
     background-color: #f5e60b;
     line-height: 40px;
+}
+
+#sparring-photo {
+    float: right;
+    margin-left: 20px
+
+}
+
+#section-5-wrapper{
+    
+    color: black;
+    padding: 40px 0;
+    background-color: #b52332;
+    line-height: 40px;
+}
+
+#children-photo {
+    float: left;
+    margin-right: 20px;
 }
 
 #footer-wrapper{
