@@ -72,6 +72,10 @@ p {
     background-color: #f5e60b;
 }
 
+#main-wrapper {
+    background-color: #b52332;
+}
+
 #hero-banner {
     background-size: cover;
     background-image: url("../images/silouette.png");
