@@ -92,7 +92,7 @@ p {
 
 #hero-banner {
     background-size: cover;
-    background-image: url("../images/silouette.png");
+    background-image: url("../images/silouette-wide.png");
     background-repeat: no-repeat;
     height: 400px;
 
@@ -101,7 +101,7 @@ p {
 #quote {
     position: absolute;
     top: 105px;
-    left: 50px;
+    left: 200px;
     width: 400px;
     font-family: 'Black Ops One', cursive;
 }
