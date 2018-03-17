@@ -25,14 +25,21 @@ function stopSlideShow () {
 
 function nextImage() {
     if (imageCount !== picturesArray.length){
-         imageCount ++;
+        imageCount++;
     
-         $("#big-image").attr("src", picturesArray[imageCount]);
-         $("#thumbnail").attr("src", thumbnailArray[imageCount]);//maybe change the opacity instead
-
-    
+        $("#big-image").attr("src", picturesArray[imageCount]);
+        if ( imageCount !== 0 ) {
+            // make a variable of the previous thumbnail
+             var thumbnailId = $("")// get the attribute that holds the value of the thumbnail id
+             // change the opacity of the previous thumbnail to 50%
+             // change the current thumbnail's opacity to 100%
+        }
     } else {
          imageCount = 0;
         nextImage();
     }
 }
+
+//on click event for the thumbnail
+
+// change the count to the clicked attributes id
