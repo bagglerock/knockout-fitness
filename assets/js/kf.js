@@ -25,8 +25,14 @@ function stopSlideShow () {
 
 function nextImage() {
     if (imageCount !== picturesArray.length){
-    imageCount ++;
+         imageCount ++;
     
-    $("#big-image").attr("src", picturesArray[imageCount]);
-    $("#thumbnail").attr("src", thumbnailArray[imageCount]);//maybe change the opacity instead
+         $("#big-image").attr("src", picturesArray[imageCount]);
+         $("#thumbnail").attr("src", thumbnailArray[imageCount]);//maybe change the opacity instead
+
+    
+    } else {
+         imageCount = 0;
+        nextImage();
+    }
 }
