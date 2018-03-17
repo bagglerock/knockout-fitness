@@ -1,26 +1,116 @@
-header {
-    text-align: center;
-    word-spacing: 30px;
+/*
+
+=====  Main Tags =====
+
+*/
+
+body {
+  margin: 0;
 }
 
-p {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 18px;
+h3 , p {
+  font-family: "Nanum Gothic", sans-serif;
+}
 
+/*
+
+===== Classes =====
+
+*/
+
+.wrapper-page {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.wrapper-page > div {
+  box-sizing: border-box;
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.social-1 {
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+.logo {
+  grid-column: 2 / 3;
+}
+
+.social-2 {
+  text-align: left;
+  grid-column: 3 /4;
+}
+
+.nav-section {
+  background-color: black;
+  height: 50px;
+  border-top: solid #b52332 2px;
+  border-bottom: solid #b52332 2px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.nav-section > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-section > ul > li {
+  border-right: solid white 2px;
+  display: inline;
+}
+
+.nav-section > ul > li:last-child {
+  border: none;
+}
+
+.nav-section > ul > li > a {
+  text-decoration: none;
+  color: #b52332;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.nav-section > ul > li > a:hover {
+  text-decoration: none;
+  color: #f5e60b;
+}
+
+.hero-section {
+  background-size: cover;
+  background-image: url("../images/silouette-wide.png");
+  background-repeat: no-repeat;
 }
 
 .section {
-    padding-left: 5%;
-    padding-right: 5%;
+  line-height: 40px;
+}
+
+.section-img-l {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.section-img-r {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .section-title {
-    border-bottom: 5px solid black;
-    margin-bottom: 30px;
+  font-size: 30px;
+  border-bottom: solid 2px black;
 }
 
-#section-1 .section-title {
-    border-bottom: 5px solid white;
+.footer-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Nanum Gothic", sans-serif;
 }
 
 .iframe-map {
@@ -37,149 +127,45 @@ p {
     height: 97%;
 }
 
+/*
 
-#nav-area {
-    background-color: black;
-    border-top: solid #b52332 2px;
-    border-bottom: solid #b52332 2px;
-    margin-top: 10px; 
-    color: white;
-    text-align: center;
-}
+===== ID's =====
 
-#nav-area {
-    padding-top: 10px;
-}
-
-#nav-area ul{
-    list-style-type: none;
-}
-
-#nav-area ul:last-child {
-    border: none;
-}
-
-
-#nav-area ul li {
-    border-right: solid white 2px;
-    display: inline;
-    padding: 0 40px 0 0;
-    margin: 0 20px;
-    
-}
-
-#nav-area ul li:last-child {
-    border: none;
-}
-
-#nav-area ul li a {
-    text-decoration: none;
-    color: #b52332;
-}
-
-#nav-area ul li a:hover {
-    text-decoration: none;
-    color: #f5e60b;
-}
-
-#hero-wrapper {
-    background-color: #f5e60b;
-}
-
-#main-wrapper {
-    background-color: #b52332;
-}
-
-#hero-banner {
-    background-size: cover;
-    background-image: url("../images/silouette-wide.png");
-    background-repeat: no-repeat;
-    height: 400px;
-
-}
+*/
 
 #quote {
-    position: absolute;
-    top: 105px;
-    left: 200px;
-    width: 400px;
-    font-family: 'Black Ops One', cursive;
+  position: relative;
+  font-family: "Black Ops One", cursive;
 }
 
-#section-1-wrapper{
-    color: white;
-    padding: 40px 0;
+#welcome {
     background-color: black;
-    line-height: 40px;
-    
-}
-
-#building-front {
-    float: left;
-    margin-right: 20px;
-}
-
-#section-2-wrapper{
-    
     color: white;
-    padding: 40px 0;
-    background-color: #b52332;
-    line-height: 40px;
+
+}
+
+#welcome-header {
+    border-bottom: solid white 2px;
 }
 
 #muay-thai {
-    float: right;
-    margin-left : 20px;
-}
-
-#section-3-wrapper{
-    
-    color: black;
-    padding: 40px 0;
-    background-color: white;
-    line-height: 40px;
-}
-
-#grappling-photo {
-    float: left;
-    margin-right: 20px;
-
-}
-
-#section-4-wrapper{
-    
-    color: black;
-    padding: 40px 0;
-    background-color: #f5e60b;
-    line-height: 40px;
-}
-
-#sparring-photo {
-    float: right;
-    margin-left: 20px
-
-}
-
-#section-5-wrapper{
-    
-    color: black;
-    padding: 40px 0;
     background-color: #b52332;
-    line-height: 40px;
+
 }
 
-#children-photo {
-    float: left;
-    margin-right: 20px;
+#grappling {
+    background-color: white;
+
 }
 
-#footer-wrapper{
-    
-    color: white;
-    padding: 40px 0;
-    background-color: black;
-    line-height: 40px;
-    text-align: center;
+#sparring {
+    background-color: #f5e60b;
+
+}
+
+#children {
+    background-color: #b52332;
+
 }
 
 #google-map-embed {
@@ -194,4 +180,233 @@ p {
 
 }
 
+/*
 
+=====  Media Queries =====
+
+*/
+
+/*
+
+-----  Phone Width -----
+
+*/
+
+@media (max-width: 599px) {
+  p {
+    font-size: 12px;
+  }
+
+  .logo > img {
+    height: 50px;
+  }
+
+  .header-section {
+    grid-template-columns: auto;
+  }
+
+  .social-1,
+  .social-2 {
+    padding-top: 8px;
+  }
+
+  .nav-section > ul > li {
+    margin-left: 10px;
+    padding-right: 5px;
+  }
+
+  .nav-section > ul > li > a {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    height: 200px;
+    background-image: url("../images/silouette.png");
+  }
+
+  .section {
+    padding: 10px 30px;
+    line-height: 25px;
+  }
+
+  .section-img-l {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .section-img-r {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .home-image {
+    grid-row: 1 / 2;
+  }
+
+  .home-image > img {
+    width: 200px;
+  }
+
+  .home-content {
+    grid-row: 2 / 3;
+  }
+
+  #quote {
+    top: 20px;
+    left: 50px;
+    width: 120px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+
+/*
+
+-----  Ipad Width -----
+
+*/
+
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .social-1,
+  .social-2 {
+    padding: 25px 10px;
+    word-spacing: 20px;
+  }
+
+  .nav-section > ul > li {
+    margin-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero-section {
+    height: 275px;
+  }
+
+  .section {
+    padding: 25px 80px;
+    line-height: 40px;
+  }
+
+  .home-image > img {
+    width: 250px;
+  }
+
+  .section-img-l > .home-image > img {
+      margin-right: 20px;
+  }
+
+  .section-img-r > .home-image > img {
+    margin-left: 20px;
+}
+
+
+  #quote {
+    top: 15%;
+    left: 15%;
+    width: 250px;
+    font-size: 20px;
+  }
+}
+
+/*
+
+-----  Old Desktop Width -----
+
+*/
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .social-1,
+  .social-2 {
+    padding: 30px 10px;
+    word-spacing: 40px;
+  }
+
+  .nav-section > ul > li {
+    margin-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero-section {
+    height: 370px;
+  }
+
+  .section {
+    padding: 25px 100px;
+    line-height: 40px;
+  }
+
+  .home-image > img {
+    width: 250px;
+  }
+
+  .section-img-l > .home-image > img {
+      margin-right: 20px;
+  }
+
+  .section-img-r > .home-image > img {
+    margin-left: 20px;
+}
+
+  #quote {
+    top: 18%;
+    left: 13%;
+    width: 350px;
+    font-size: 30px;
+  }
+}
+
+/*
+
+-----  Modern Desktop Width -----
+
+*/
+
+@media (min-width: 1200px) {
+  .social-1,
+  .social-2 {
+    padding: 30px 10px;
+    word-spacing: 60px;
+  }
+
+  .nav-section > ul > li {
+    margin-left: 7%;
+    padding-right: 7%;
+  }
+
+  .section p {
+      text-align: left !important;
+  }
+
+  .hero-section {
+    height: 450px;
+  }
+
+  .section {
+    padding: 25px 130px;
+    line-height: 40px;
+  }
+
+  .home-image > img {
+    width: 250px;
+  }
+
+  .section-img-l > .home-image > img {
+      margin-right: 20px;
+  }
+
+  .section-img-r > .home-image > img {
+    margin-left: 20px;
+}
+
+  #quote {
+    top: 18%;
+    left: 13%;
+    width: 500px;
+    font-size: 40px;
+  }
+}

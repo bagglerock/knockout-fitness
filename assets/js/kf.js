@@ -3,18 +3,16 @@
 //what is happening
 
 //all of the pictures
-var picturesArray = [];
-var thumbnailArray = [];
+var picturesArray = ["../images/slideshow/IMG_0400.PNG", ];
 
 var showImage;
 
 //interval to change pic
 var nSeconds = 3000;
-var imageCount;
-var thumbnailCount;
+var count;
 
 function startSlideShow () {
-    showImage = setInterval(function() {
+    showImage = setInteval(function() {
         nextImage();
     }, nSeconds);
 }
@@ -23,23 +21,8 @@ function stopSlideShow () {
     clearImage(showImage);
 }
 
-function nextImage() {
-    if (imageCount !== picturesArray.length){
-        imageCount++;
-    
-        $("#big-image").attr("src", picturesArray[imageCount]);
-        if ( imageCount !== 0 ) {
-            // make a variable of the previous thumbnail  use $("[myAttribute='my value']")
-             var thumbnailId = $("")// get the attribute that holds the value of the thumbnail id
-             // change the opacity of the previous thumbnail to 50%
-             // change the current thumbnail's opacity to 100%
-        }
-    } else {
-         imageCount = 0;
-        nextImage();
-    }
-}
+function changeMainPic (pic) {}
 
-//on click event for the thumbnail
+function changeHighlightedPic (pic) {}
 
-// change the count to the clicked attributes id
+displayImage();
