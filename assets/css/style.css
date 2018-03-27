@@ -127,6 +127,28 @@ h3 , p {
     height: 97%;
 }
 
+.fab:hover, .fas:hover {
+  -webkit-transform: rotate(180deg);
+  
+}
+
+.coach-description {
+  margin-left: 40px;
+}
+
+.coach-description > h3 {
+  font-size: 30px;
+  border-bottom: solid 2px black;
+}
+
+.coach-description > p {
+  font-size: 18px;
+}
+
+.coach-image > img{
+  width: 250px;
+}
+
 
 /*
 
@@ -171,13 +193,11 @@ h3 , p {
 }
 
 #google-map-embed {
-    margin-top: 10px;
     height: 80vh;
 
 }
 
 #calendar-embed {
-    margin-top: 10px;
     height: 80vh;
 
 }
@@ -187,42 +207,17 @@ h3 , p {
   border-top: solid 20px #f5e60b;
   border-bottom: solid 20px #f5e60b;
   padding-top: 0;
+
 }
 
-.facebookImgThumb i {
-  border: 2px solid #b0b0b0;
-  padding: 0;
-  margin: 0;
-  vertical-align: middle;
-  width: 149px;
-  height: 116px;
-  display: inline-block;
-  background-position: center 25%;
-  background-repeat: no-repeat;
-  }
-  .facebookImgThumb p {
-  vertical-align: bottom;
-  font-size: 0.85em;
-  }
-  .facebookImgThumb {
-  margin: 5px;
-  display: inline-block;
-  width: 151px;
-  }
-  .facebookImgThumb:hover {
-  cursor: pointer;
-  }
-  .loader{
-  display:none;
-  /*set the div in the bottom right corner*/
-  position:fixed;
-  bottom:8px;
-  right:8px;
-  width:31px;
-  height:31px;
-  /*give it some background and border*/
-  background:url(https://dl.dropbox.com/u/1017142/ajax-loader.gif) no-repeat;
-  }
+#coach-jim {
+  background-color:  #f5e60b;
+}
+
+#coach-linda {
+  background-color: #b52332;
+
+}
 
 /*
 
