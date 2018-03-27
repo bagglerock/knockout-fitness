@@ -89,6 +89,7 @@ h3 , p {
 
 .section {
   line-height: 40px;
+  height: 600px;
 }
 
 .section-img-l {
@@ -107,6 +108,7 @@ h3 , p {
 }
 
 .footer-section {
+    clear: both;
     background-color: black;
     color: white;
     text-align: center;
@@ -283,7 +285,8 @@ h3 , p {
   }
 
   .home-image > img {
-    width: 200px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .home-content {
@@ -332,7 +335,8 @@ h3 , p {
   }
 
   .home-image > img {
-    width: 250px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   .section-img-l > .home-image > img {
@@ -380,7 +384,8 @@ h3 , p {
   }
 
   .home-image > img {
-    width: 250px;
+    max-width: 500px;
+    max-height: 500px;
   }
 
   .section-img-l > .home-image > img {
@@ -431,7 +436,8 @@ h3 , p {
   }
 
   .home-image > img {
-    width: 250px;
+    max-width: 550px;
+    max-height: 550px;
   }
 
   .section-img-l > .home-image > img {
