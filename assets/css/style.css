@@ -129,10 +129,6 @@ h3 , p {
     height: 97%;
 }
 
-.fab:hover, .fas:hover {
-  -webkit-transform: rotate(180deg);
-  
-}
 
 .coach-description {
   margin-left: 40px;
@@ -149,6 +145,11 @@ h3 , p {
 
 .coach-image > img{
   width: 250px;
+}
+
+.header-section > div > a {
+  text-decoration: none;
+  color: grey;
 }
 
 
