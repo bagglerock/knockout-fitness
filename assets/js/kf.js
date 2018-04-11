@@ -5,46 +5,20 @@ $(document).ready(function() {
   $("#quote").fadeIn(1000);
 
   $(".section").hover(function(){
-    console.log("hover works");
+    //console.log("hover works");
     $("img").fadeIn();
   })
 
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId:
-        "145634995501895",
-      autoLogAppEvents: true,
-      xfbml: true,
-      version: "v2.12"
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 1000){
+            //console.log("something");
+        }
+      });
     });
-  };
-  
-  (function(d, s, id) { //enclosure
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-      return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, "script", "facebook-jssdk");
-
-  $("#test").on("click", function() {
-    FB.api(
-      "/KnockOutFitnessNj",
-      "GET",
-      { fields: "albums{photos{images}}",
-    access_token: accessToken
-    },
-      function(response) {
-        console.log(response);
-      }
-    );
-  });
 });
+
 
 
 

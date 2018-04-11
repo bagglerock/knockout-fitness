@@ -74,7 +74,7 @@ h3 , p {
 .nav-section > ul > li > a {
   text-decoration: none;
   font-weight: 900;
-  color: #f5e60b;
+  color: #b52332;
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -106,7 +106,7 @@ h3 , p {
 
 .section-title {
   font-size: 30px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1px black;
 }
 
 .footer-section {
@@ -114,6 +114,7 @@ h3 , p {
     background-color: black;
     color: white;
     text-align: center;
+    height: 300px;
     font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -138,7 +139,7 @@ h3 , p {
 
 .coach-description > h3 {
   font-size: 30px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1px black;
 }
 
 .coach-description > p {
@@ -176,27 +177,28 @@ h3 , p {
 
 }
 
-#welcome-header {
-    border-bottom: solid white 2px;
+#muay-thai {
+    background-color: #f5e60b;
+    color: black;
+
 }
 
-#muay-thai {
-    background-color: #b52332;
+#sparring > .home-content >.section-title,
+#grappling > .home-content >.section-title,
+#children > .home-content >.section-title,
+#welcome-header   {
+  border-bottom: solid 1px white;
+}
+
+#grappling {
+    background-color: black;
     color: white;
 
 }
 
-#muay-thai > .home-content >.section-title {
-  border-bottom: solid 2px white;
-}
-
-#grappling {
-    background-color: white;
-
-}
-
 #sparring {
-    background-color: #f5e60b;
+    background-color: #b52332;
+    color: white;
 
 }
 
@@ -204,10 +206,6 @@ h3 , p {
     background-color: #b52332;
     color: white;
 
-}
-
-#children > .home-content >.section-title {
-  border-bottom: solid 2px white;
 }
 
 #google-map-embed {
@@ -475,25 +473,25 @@ h3 , p {
   }
 
   .hero-section {
-    height: 450px;
+    height: 500px;
   }
 
   .section {
-    padding: 25px 130px;
+    padding: 75px 130px;
     line-height: 40px;
   }
 
   .home-image > img {
-    max-width: 550px;
-    max-height: 550px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   .section-img-l > .home-image > img {
-      margin-right: 20px;
+      margin-right: 100px;
   }
 
   .section-img-r > .home-image > img {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 .section-title {
