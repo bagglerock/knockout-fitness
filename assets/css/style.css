@@ -90,17 +90,8 @@ h3 , p {
 }
 
 .separator {
-  /*background-size: cover;
-  //background-image: url("../images/group-filtered.jpeg");
-  //background-repeat: no-repeat;*/
-
-    /* The image used */
     background-image: url("../images/group-2.jpeg");
-
-    /* Set a specific height */
     position: relative;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,6 +125,19 @@ h3 , p {
     text-align: center;
     height: 300px;
     font-family: "Nanum Gothic", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 25px 200px;
+
+}
+
+.footer-section > div {
+  height: 200px;
+  text-align: left;
+  color: #bbb;
+
+
 }
 
 .iframe-map {
