@@ -111,7 +111,7 @@ h3 , p {
 
 .footer-section {
     clear: both;
-    background-color: black;
+    background-color: #222;
     color: white;
     text-align: center;
     height: 300px;
@@ -155,6 +155,10 @@ h3 , p {
 .header-section > div > a {
   text-decoration: none;
   color: grey;
+}
+
+.home-image > img {
+  border: solid #222 5px;
 }
 
 
@@ -474,6 +478,11 @@ h3 , p {
 
   .hero-section {
     height: 500px;
+  }
+
+  .separator {
+    height: 220px;
+    background-color: #222;
   }
 
   .section {
