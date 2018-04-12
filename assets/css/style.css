@@ -90,9 +90,21 @@ h3 , p {
 }
 
 .separator {
-  background-size: cover;
-  background-image: url("../images/group-filtered.jpeg");
-  background-repeat: no-repeat;
+  /*background-size: cover;
+  //background-image: url("../images/group-filtered.jpeg");
+  //background-repeat: no-repeat;*/
+
+    /* The image used */
+    background-image: url("../images/group-2.jpeg");
+
+    /* Set a specific height */
+    position: relative;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section {
@@ -488,7 +500,7 @@ h3 , p {
   }
 
   .separator {
-    height: 420px;
+    height: 270px;
   }
 
   .section {
