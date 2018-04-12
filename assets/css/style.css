@@ -89,6 +89,12 @@ h3 , p {
   background-repeat: no-repeat;
 }
 
+.separator {
+  background-size: cover;
+  background-image: url("../images/group-filtered.jpeg");
+  background-repeat: no-repeat;
+}
+
 .section {
   line-height: 40px;
   height: 600px;
@@ -112,7 +118,7 @@ h3 , p {
 .footer-section {
     clear: both;
     background-color: #222;
-    color: white;
+    color: #999;
     text-align: center;
     height: 300px;
     font-family: "Nanum Gothic", sans-serif;
@@ -177,7 +183,7 @@ h3 , p {
 
 #welcome {
     background-color: black;
-    color: white;
+    color: #ccc;
 
 }
 
@@ -191,24 +197,24 @@ h3 , p {
 #grappling > .home-content >.section-title,
 #children > .home-content >.section-title,
 #welcome-header   {
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px #ccc;
 }
 
 #grappling {
     background-color: black;
-    color: white;
+    color: #ccc;
 
 }
 
 #sparring {
     background-color: #b52332;
-    color: white;
+    color: #ccc;
 
 }
 
 #children {
     background-color: #b52332;
-    color: white;
+    color: #ccc;
 
 }
 
@@ -236,7 +242,6 @@ h3 , p {
 
 #coach-linda {
   background-color:  #f5e60b;
-
 }
 
 #jim-section {
@@ -290,6 +295,8 @@ h3 , p {
     height: 200px;
     background-image: url("../images/silouette.png");
   }
+
+
 
   .section {
     padding: 10px 30px;
@@ -481,8 +488,7 @@ h3 , p {
   }
 
   .separator {
-    height: 220px;
-    background-color: #222;
+    height: 420px;
   }
 
   .section {

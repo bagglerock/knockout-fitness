@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-  $("#quote").fadeIn(1000);
+  $("#quote").fadeIn(1500);
 
   $(".section").hover(function(){
     //console.log("hover works");
