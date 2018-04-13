@@ -122,8 +122,7 @@ h3 , p {
     clear: both;
     background-color: #222;
     color: #999;
-    text-align: center;
-    height: 300px;
+    
     font-family: "Nanum Gothic", sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -364,12 +363,17 @@ h3 , p {
   grid-column: 1 / 3;
 }
 
+.footer-logo > img {
+  height: 75px;
+}
+
 .footer-info {
   grid-column: 1 / 3;
+  font-size: 12px;
 }
 
 .footer-section {
-  padding: 25px 25px;
+  padding: 25px 35px;
   height: 500px;
 }
 
@@ -429,6 +433,7 @@ h3 , p {
 
 .footer-section {
   height: 500px;
+  padding: 25px 155px;
 }
 
 .footer-logo {
@@ -484,8 +489,8 @@ h3 , p {
   }
 
   .home-image > img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 350px;
+    max-height: 350px;
   }
 
   .section-img-l > .home-image > img {
@@ -500,6 +505,20 @@ h3 , p {
   font-size: 35px;
   line-height: 50px;
   margin-bottom: 20px;
+}
+
+.footer-section {
+  height: 300px;
+  padding: 25px 125px;
+
+}
+
+.footer-logo {
+  grid-column: 1 / 2;
+}
+
+.footer-info {
+  grid-column: 2 / 3;
 }
 
   #quote {
@@ -554,6 +573,11 @@ h3 , p {
     max-height: 400px;
   }
 
+  .footer-section {
+    text-align: center;
+    height: 300px;
+  }
+
   .section-img-l > .home-image > img {
       margin-right: 100px;
   }
@@ -568,10 +592,23 @@ h3 , p {
   margin-bottom: 20px;
 }
 
+.footer-section {
+  padding: 25px 200px;
+}
+
+.footer-logo {
+  grid-column: 1 / 2;
+}
+
+.footer-info {
+  grid-column: 2 / 3;
+}
+
   #quote {
     top: 18%;
     left: 13%;
     width: 500px;
     font-size: 42px;
   }
+
 }
