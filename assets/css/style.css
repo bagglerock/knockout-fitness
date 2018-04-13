@@ -136,6 +136,7 @@ h3 , p {
   height: 200px;
   text-align: left;
   color: #bbb;
+  line-height: 30px;
 
 
 }
@@ -312,7 +313,9 @@ h3 , p {
     background-image: url("../images/silouette.png");
   }
 
-
+  .separator {
+    background-attachment: scroll;
+}
 
   .section {
     padding: 10px 30px;
@@ -357,6 +360,19 @@ h3 , p {
   }
 }
 
+.footer-logo {
+  grid-column: 1 / 3;
+}
+
+.footer-info {
+  grid-column: 1 / 3;
+}
+
+.footer-section {
+  padding: 25px 25px;
+  height: 500px;
+}
+
 
 /*
 
@@ -382,14 +398,19 @@ h3 , p {
     height: 275px;
   }
 
+  .separator {
+      background-attachment: scroll;
+}
+
   .section {
     padding: 25px 80px;
     line-height: 40px;
+    height: 450px;
   }
 
   .home-image > img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .section-img-l > .home-image > img {
@@ -401,9 +422,21 @@ h3 , p {
 }
 
 .section-title {
-  font-size: 35px;
+  font-size: 28px;
   line-height: 50px;
   margin-bottom: 10px;
+}
+
+.footer-section {
+  height: 500px;
+}
+
+.footer-logo {
+  grid-column: 1 / 3;
+}
+
+.footer-info {
+  grid-column: 1 / 3;
 }
 
   #quote {
@@ -441,8 +474,12 @@ h3 , p {
     height: 370px;
   }
 
+  .separator {
+    height: 270px;
+  }
+
   .section {
-    padding: 25px 100px;
+    padding: 25px 75px;
     line-height: 40px;
   }
 
