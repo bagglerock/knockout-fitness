@@ -409,7 +409,7 @@ h3 , p {
 
   .section {
     padding: 25px 80px;
-    line-height: 40px;
+    line-height: 30px;
     height: 450px;
   }
 
@@ -419,11 +419,11 @@ h3 , p {
   }
 
   .section-img-l > .home-image > img {
-      margin-right: 20px;
+      margin-right: 40px;
   }
 
   .section-img-r > .home-image > img {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .section-title {
@@ -434,7 +434,7 @@ h3 , p {
 
 .footer-section {
   height: 500px;
-  padding: 25px 155px;
+  padding: 25px 185px;
 }
 
 .footer-logo {
@@ -462,7 +462,7 @@ h3 , p {
 @media (min-width: 900px) and (max-width: 1199px) {
 
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .social-1,
@@ -486,7 +486,7 @@ h3 , p {
 
   .section {
     padding: 55px 75px;
-    line-height: 40px;
+    line-height: 34px;
     height: 475px;
   }
 
@@ -500,15 +500,15 @@ h3 , p {
   }
 
   .section-img-l > .home-image > img {
-      margin-right: 20px;
+      margin-right: 50px;
   }
 
   .section-img-r > .home-image > img {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .section-title {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 50px;
   margin-bottom: 20px;
 }
@@ -543,7 +543,7 @@ h3 , p {
 
 @media (min-width: 1200px) {
   p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .social-1,
