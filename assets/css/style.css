@@ -485,13 +485,18 @@ h3 , p {
   }
 
   .section {
-    padding: 25px 75px;
+    padding: 55px 75px;
     line-height: 40px;
+    height: 475px;
   }
 
   .home-image > img {
     max-width: 350px;
     max-height: 350px;
+  }
+
+  .separator {
+    height: 350px;
   }
 
   .section-img-l > .home-image > img {
@@ -561,7 +566,7 @@ h3 , p {
   }
 
   .separator {
-    height: 270px;
+    height: 350px;
   }
 
   .section {
