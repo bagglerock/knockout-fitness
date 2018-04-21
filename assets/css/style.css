@@ -188,7 +188,10 @@ p {
   position: relative;
   font-family: "Black Ops One", cursive;
   display: none;
+  text-shadow: 5px 5px #d3c409;
 }
+
+
 
 #welcome {
   background-color: black;
