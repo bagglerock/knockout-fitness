@@ -10,7 +10,7 @@ node_modules
 /build
 
 # just a bunch of pics
-/resources
+resources
 
 # misc
 .DS_Store
