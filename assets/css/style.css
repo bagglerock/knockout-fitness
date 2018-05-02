@@ -367,6 +367,7 @@ p {
   }
   .coach-description {
     line-height: 25px;
+    padding-left: 0;
   }
   .coach-description>p {
     font-size: 14px;
