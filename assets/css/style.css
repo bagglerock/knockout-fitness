@@ -551,6 +551,7 @@ p {
   }
   .footer-info {
     grid-column: 2 / 3;
+    padding-top: 50px;
   }
   .footer-prajioud > img {
     max-width: 400px;
@@ -642,6 +643,7 @@ p {
   }
   .footer-info {
     grid-column: 2 / 3;
+    padding-top: 75px;
   }
 
   .footer-prajioud > img {
