@@ -295,7 +295,7 @@ p {
     padding-right: 5px;
   }
   .nav-section>ul>li>a {
-    font-size: 14px;
+    font-size: 13px;
   }
   .hero-section {
     height: 180px;
@@ -335,9 +335,6 @@ p {
   .section-title {
     font-size: 20px;
   }
-  .coach-image {
-    margin-left: 50px;
-  }
   .footer-logo {
     grid-row: 1 / 2;
   }
@@ -365,6 +362,9 @@ p {
   .footer-section>div {
     text-align: center;
   }
+  .coach-image {
+    text-align: center;
+  }
   .coach-description {
     line-height: 25px;
   }
@@ -385,10 +385,11 @@ p {
   }
   #coach-linda {
     padding-top: 30px;
-    height: 700px;
+    height: 800px;
   }
   #coach-linda>.coach-description {
     grid-row: 2 / 3;
+    height: 250px;
   }
   #coach-linda>.coach-image {
     grid-row: 1 / 2;
