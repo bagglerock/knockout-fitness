@@ -136,6 +136,11 @@ p {
   line-height: 30px;
 }
 
+.footer-images{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
 .iframe-map {
   position: relative;
   height: 0;
@@ -169,7 +174,7 @@ p {
   border: solid 5px black;
 }
 
-.icon{
+.icon {
   text-decoration: none;
   color: grey;
 }
@@ -191,16 +196,14 @@ p {
   text-shadow: 5px 5px #d3c409;
 }
 
-
-
 #welcome {
   background-color: black;
   color: #ccc;
 }
 
 #muay-thai {
-  background-color: #f5e60b;
-  color: black;
+  background-color: #b52332;
+  color: #fff;
 }
 
 #sparring>.home-content>.section-title,
@@ -220,9 +223,14 @@ p {
   color: #ccc;
 }
 
+#fitness {
+  background-color: #f5e60b;
+  color: black;
+}
+
 #children {
-  background-color: #b52332;
-  color: #ccc;
+  background-color: #fff;
+  color: #000;
 }
 
 #google-map-embed {
@@ -331,21 +339,30 @@ p {
     margin-left: 50px;
   }
   .footer-logo {
-    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
   .footer-logo>img {
     height: 50px;
   }
+  .footer-prajioud > img {
+    max-width: 200px;
+  }
+  .footer-prajioud {
+    grid-row: 2 / 3;
+  }
+  .footer-images {
+    grid-column: 1 / 3;
+  }
+
   .footer-info {
     grid-column: 1 / 3;
     font-size: 12px;
   }
   .footer-section {
     padding: 25px 35px;
-    height: 500px;
+    height: 600px;
   }
-
-  .footer-section > div {
+  .footer-section>div {
     text-align: center;
   }
   .coach-description {
@@ -370,16 +387,13 @@ p {
     padding-top: 30px;
     height: 700px;
   }
-
-  #coach-linda > .coach-description {
+  #coach-linda>.coach-description {
     grid-row: 2 / 3;
   }
-
-  #coach-linda > .coach-image {
+  #coach-linda>.coach-image {
     grid-row: 1 / 2;
   }
 }
-
 
 /*
 
@@ -424,13 +438,19 @@ p {
     margin-bottom: 10px;
   }
   .footer-section {
-    height: 500px;
-    padding: 25px 185px;
+    height: 750px;
+    padding: 50px 185px;
   }
-  .footer-logo {
+  .footer-images {
     grid-column: 1 / 3;
   }
 
+  .footer-logo {
+    grid-row: 1 / 2;
+  }
+  .footer-prajioud {
+    grid-row: 2 / 3;
+  }
   .footer-logo>img {
     height: 75px;
   }
@@ -438,7 +458,9 @@ p {
     grid-column: 1 / 3;
     font-size: 14px;
   }
-
+  .footer-section>div {
+    text-align: center;
+  }
   .coach-description {
     line-height: 25px;
   }
@@ -447,6 +469,9 @@ p {
   }
   .coach-description>h3 {
     font-size: 22px;
+  }
+  .footer-prajioud > img {
+    max-width: 300px;
   }
   #coach-jim {
     padding-top: 50px;
@@ -460,14 +485,13 @@ p {
   #coach-linda {
     padding-top: 30px;
     height: 570px;
-  }  
+  }
   #quote {
     top: 15%;
     left: 15%;
     width: 250px;
     font-size: 20px;
   }
-
 }
 
 /*
@@ -519,7 +543,7 @@ p {
     margin-bottom: 20px;
   }
   .footer-section {
-    height: 300px;
+    height: 500px;
     padding: 25px 125px;
   }
   .footer-logo {
@@ -527,6 +551,9 @@ p {
   }
   .footer-info {
     grid-column: 2 / 3;
+  }
+  .footer-prajioud > img {
+    max-width: 400px;
   }
   .coach-description {
     line-height: 60px;
@@ -594,7 +621,7 @@ p {
   }
   .footer-section {
     text-align: center;
-    height: 300px;
+    height: 500px;
   }
   .section-img-l>.home-image>img {
     margin-right: 100px;
@@ -615,6 +642,10 @@ p {
   }
   .footer-info {
     grid-column: 2 / 3;
+  }
+
+  .footer-prajioud > img {
+    max-width: 400px;
   }
   .coach-description {
     line-height: 60px;
