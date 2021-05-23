@@ -4,8 +4,10 @@
 
 */
 
+html,
 body {
   margin: 0;
+  height: 100%;
 }
 
 h1,
@@ -188,6 +190,8 @@ li {
 
 .schedule-page {
   background-color: black;
+  border-top: solid 20px #f5e60b;
+  border-bottom: solid 20px #f5e60b;
   color: white;
 }
 
@@ -223,6 +227,25 @@ li {
 
 .schedule-list > li {
   margin-bottom: 8px;
+}
+
+.photos-page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  border-top: solid 20px #f5e60b;
+  border-bottom: solid 20px #f5e60b;
+  padding: 0 1em;
+}
+
+.photo-wrapper {
+  flex: 1 1 24%;
+  padding: 1em;
+}
+
+.photo-wrapper > a > img {
+  min-width: 300px;
+  width: 100%;
 }
 
 /*
@@ -277,13 +300,6 @@ li {
 
 #google-map-embed {
   height: 80vh;
-}
-
-#photos-section {
-  background-color: black;
-  border-top: solid 20px #f5e60b;
-  border-bottom: solid 20px #f5e60b;
-  padding-top: 0;
 }
 
 #coach-jim {
