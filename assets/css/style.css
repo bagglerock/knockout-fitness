@@ -175,6 +175,15 @@ li {
   border: solid 5px black;
 }
 
+.coach-header {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+#jim-section > .coach-header {
+  border-bottom: solid 1px white;
+}
+
 .icon {
   text-decoration: none;
   color: grey;
@@ -308,10 +317,6 @@ li {
 
 #jim-section {
   color: white;
-}
-
-#jim-header {
-  border-bottom: solid 2px white;
 }
 
 /*
@@ -503,9 +508,17 @@ li {
   }
 
   .section {
-    padding: 25px 80px;
+    padding: 25px 25px;
     line-height: 30px;
     height: 450px;
+  }
+
+  .home-content > h3 {
+    font-size: 1.5em;
+  }
+
+  .home-content > p {
+    font-size: 0.8em;
   }
 
   .home-image > img {
