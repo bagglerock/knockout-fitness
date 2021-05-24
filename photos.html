@@ -13,8 +13,6 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="./assets/js/kf.js"></script>
-
     <div class="wrapper-page">
 
         <div class="header-section">
@@ -53,106 +51,7 @@
             </ul>
         </div>
 
-
-        <div class='photos-page-wrapper'>
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image0.jpeg' target='_blank'><img src="./assets/images_21-5-23/image0.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image1.jpeg' target='_blank'><img src="./assets/images_21-5-23/image1.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image3.jpeg' target='_blank'><img src="./assets/images_21-5-23/image3.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image4.jpeg' target='_blank'><img src="./assets/images_21-5-23/image4.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image5.jpeg' target='_blank'><img src="./assets/images_21-5-23/image5.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image6.jpeg' target='_blank'><img src="./assets/images_21-5-23/image6.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image7.jpeg' target='_blank'><img src="./assets/images_21-5-23/image7.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image8.jpeg' target='_blank'><img src="./assets/images_21-5-23/image8.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image9.jpeg' target='_blank'><img src="./assets/images_21-5-23/image9.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image10.jpeg' target='_blank'><img src="./assets/images_21-5-23/image10.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image11.jpeg' target='_blank'><img src="./assets/images_21-5-23/image11.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image12.jpeg' target='_blank'><img src="./assets/images_21-5-23/image12.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image13.jpeg' target='_blank'><img src="./assets/images_21-5-23/image13.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image14.jpeg' target='_blank'><img src="./assets/images_21-5-23/image14.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image15.jpeg' target='_blank'><img src="./assets/images_21-5-23/image15.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image16.jpeg' target='_blank'><img src="./assets/images_21-5-23/image16.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image17.jpeg' target='_blank'><img src="./assets/images_21-5-23/image17.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image18.jpeg' target='_blank'><img src="./assets/images_21-5-23/image18.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image19.jpeg' target='_blank'><img src="./assets/images_21-5-23/image19.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image20.jpeg' target='_blank'><img src="./assets/images_21-5-23/image20.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image21.jpeg' target='_blank'><img src="./assets/images_21-5-23/image21.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image22.jpeg' target='_blank'><img src="./assets/images_21-5-23/image22.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-                <a href='./assets/images_21-5-23/image23.jpeg' target='_blank'><img src="./assets/images_21-5-23/image23.jpeg" alt=""></a>
-            </div>
-
-            <div class='photo-wrapper'>
-            </div>
-
-            <div class='photo-wrapper'>
-            </div>
-        </div>
+        <div class='photos-page-wrapper' id='photos'></div>
 
         <div class="nav-section">
             <ul>
@@ -210,8 +109,56 @@
     </div>
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/js/kf.js"></script>
 
+<script type="text/javascript" >
+    const xhr = new XMLHttpRequest();
+
+    const photosSection = document.getElementById("photos");
+
+    xhr.open("GET", "/assets/images_21-5-23", true);
+    xhr.responseType = 'document';
+    xhr.onload = () => {
+        if(xhr.status === 200) {
+            const elements = xhr.response.getElementsByTagName("a");
+            
+            for(element of elements) {
+                if(element.href.match(/\.(jpe?g|png|gif)$/) ) { 
+                    const image = document.createElement("img");
+                    image.src = element.href;
+                    image.alt = `Picture of ${image.src}`; 
+
+                    const anchorTag = document.createElement("a");
+                    anchorTag.href = element.href;
+                    anchorTag.target = "_blank";
+
+                    const photoWrapper = document.createElement("div");
+                    photoWrapper.className = "photo-wrapper";
+
+                    anchorTag.appendChild(image);
+                    photoWrapper.appendChild(anchorTag);
+
+                    photosSection.appendChild(photoWrapper)
+                }
+            };
+
+            const extraPhotoWrapper = document.createElement("div");
+            extraPhotoWrapper.className = "photo-wrapper";
+
+            photosSection.appendChild(extraPhotoWrapper);
+            photosSection.appendChild(extraPhotoWrapper);
+        } else {
+            const errorMessage = document.createElement("p");
+            errorMessage.innerHTML = "Failed to get images";
+            errorMessage.style = "color: white;";
+
+            const errorMessageWrapper = document.createElement("div");
+            errorMessageWrapper.appendChild(errorMessage);
+
+            photosSection.appendChild(errorMessageWrapper);
+        }
+    }
+
+    xhr.send()
+</script>
 
 </html>
