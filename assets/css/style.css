@@ -119,6 +119,7 @@ li {
 }
 
 .section-title {
+  display: inline-block;
   font-size: 30px;
   border-bottom: solid 1px black;
 }
@@ -268,7 +269,7 @@ li {
 
 #welcome {
   background-color: black;
-  color: #ccc;
+  color: #fff;
 }
 
 #muay-thai {
@@ -285,12 +286,12 @@ li {
 
 #grappling {
   background-color: black;
-  color: #ccc;
+  color: #fff;
 }
 
 #sparring {
   background-color: #b52332;
-  color: #ccc;
+  color: #fff;
 }
 
 #fitness {
@@ -403,6 +404,8 @@ li {
   }
 
   .section-title {
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
     font-size: 20px;
   }
 
@@ -625,80 +628,101 @@ li {
   p {
     font-size: 16px;
   }
+
   .social-1,
   .social-2 {
     padding: 30px 10px;
     word-spacing: 40px;
   }
+
   .nav-section > ul > li {
     margin-left: 6%;
     padding-right: 6%;
   }
+
   .hero-section {
     height: 370px;
   }
+
   .separator {
     height: 270px;
   }
+
   .section {
     padding: 55px 75px;
     line-height: 34px;
     height: 475px;
   }
+
   .home-image > img {
     max-width: 350px;
     max-height: 350px;
   }
+
   .separator {
     height: 350px;
   }
+
   .section-img-l > .home-image > img {
     margin-right: 50px;
   }
+
   .section-img-r > .home-image > img {
     margin-left: 50px;
   }
+
   .section-title {
     font-size: 30px;
     line-height: 50px;
     margin-bottom: 20px;
   }
+
   .footer-section {
     height: 500px;
     padding: 25px 125px;
   }
+
   .footer-logo {
     grid-column: 1 / 2;
   }
+
   .footer-info {
     grid-column: 2 / 3;
     padding-top: 50px;
   }
+
   .footer-prajioud > img {
     max-width: 400px;
   }
+
   .coach-description {
-    line-height: 60px;
+    line-height: 50px;
   }
+
   .coach-description > p {
-    font-size: 18px;
+    font-size: 1em;
   }
+
   #quote {
     top: 18%;
     left: 13%;
     width: 350px;
     font-size: 30px;
   }
+
   #coach-jim {
     padding-top: 30px;
   }
+
   #coach-jim > .coach-image > img {
     max-width: 380px;
     margin-right: 25px;
   }
+
   #coach-linda > .coach-image > img {
     margin-left: 70px;
   }
+
   #coach-linda {
     padding-top: 30px;
     height: 570px;
