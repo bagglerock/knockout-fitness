@@ -11,17 +11,17 @@ The current CSS uses black, yellow `#f5e60b`, red `#b52332`, white, and charcoal
 `#222`. Retain this palette and the existing graphics. These are source colors;
 check contrast for each new text/background pairing.
 
-| Existing asset | Intended use |
-| --- | --- |
-| `assets/images/9596014.png` | Original logo, displayed at its natural proportions on a suitable light background |
-| `assets/images/silouette-wide.png` | Original yellow-and-black fighter artwork for the desktop hero |
-| `assets/images/silouette.png` | Existing alternate fighter artwork; inspect cropping for mobile |
-| `assets/images/prajioud.jpg` | Preserve as a supporting brand image where appropriate |
-| `assets/images/group-2.jpg` and other real gym photos | Community and training sections |
-| `assets/images/children_home.png`, `grappling_home.png`, `sparring_home.png` | Existing program graphics retained in the asset inventory |
-| `assets/images/jim_profile_0525.jpg`, `linda.jpg` | Existing coach photography, subject to current-content confirmation |
-| `assets/class-photos/` | Curated gallery and integration fallback |
-| `resources/photos/merchandise/` | Potential future product photography; verify it represents current stock |
+| Existing asset                                                               | Intended use                                                                       |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `assets/images/9596014.png`                                                  | Original logo, displayed at its natural proportions on a suitable light background |
+| `assets/images/silouette-wide.png`                                           | Original yellow-and-black fighter artwork for the desktop hero                     |
+| `assets/images/silouette.png`                                                | Existing alternate fighter artwork; inspect cropping for mobile                    |
+| `assets/images/prajioud.jpg`                                                 | Preserve as a supporting brand image where appropriate                             |
+| `assets/images/group-2.jpg` and other real gym photos                        | Community and training sections                                                    |
+| `assets/images/children_home.png`, `grappling_home.png`, `sparring_home.png` | Existing program graphics retained in the asset inventory                          |
+| `assets/images/jim_profile_0525.jpg`, `linda.jpg`                            | Existing coach photography, subject to current-content confirmation                |
+| `assets/class-photos/`                                                       | Curated gallery and integration fallback                                           |
+| `resources/photos/merchandise/`                                              | Potential future product photography; verify it represents current stock           |
 
 Keep original source files. Derived optimized images may be generated without
 changing the artwork. Do not substitute generated logos, stock fighters, or a
@@ -40,13 +40,13 @@ for body text; preserve the strong display character while improving hierarchy.
 
 ## Pages and visitor tasks
 
-| Page | Main job |
-| --- | --- |
-| Home | Explain the gym, introduce programs, show upcoming classes and recent photos, lead to contact |
-| Coaches | Present current biographies and real portraits |
-| Schedule | Show a readable agenda sourced from Google Calendar, with an option to open the calendar |
-| Photos | Show Instagram photos with original-post links and a curated local gallery fallback |
-| Location / Contact | Make calling, emailing, and getting directions easy |
+| Page               | Main job                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| Home               | Explain the gym, introduce programs, show upcoming classes and recent photos, lead to contact   |
+| Coaches            | Present current biographies and real portraits                                                  |
+| Schedule           | Show our own agenda sourced from Google Calendar, with the current weekly timetable as fallback |
+| Photos             | Show Instagram photos with original-post links and a curated local gallery fallback             |
+| Location / Contact | Make calling, emailing, and getting directions easy                                             |
 
 Preserve existing `index.html`, `coaches.html`, `schedule.html`, `photos.html`, and
 `location.html` URLs, either as build entry points or tested redirects. Retain

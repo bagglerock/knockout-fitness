@@ -1,6 +1,9 @@
 # Instagram and Google Calendar
 
-Status: integration design, not connected. Provider requirements checked September
+Status: display adapters and optional Node feed export implemented, not connected.
+**Updated owner decision:** use our own schedule design with the existing weekly
+timetable as fallback; do not embed Google Calendar. This overrides earlier embed options below.
+See [Deployment](DEPLOYMENT.md) for actual supported setup and limitations; the broader design below includes future work. Provider requirements checked September
 14, 2026; recheck exact permissions and account configuration during implementation.
 
 ## Instagram photos
@@ -79,16 +82,12 @@ Sources: [create a calendar](https://support.google.com/calendar/answer/37095?hl
 [Google Calendar mobile app](https://play.google.com/store/apps/details?hl=en&id=com.google.android.calendar),
 [embed a calendar](https://support.google.com/calendar/answer/41207?hl=en).
 
-### Display choices
+### Display choice
 
-| Approach | Benefits | Tradeoffs |
-| --- | --- | --- |
-| Public Google Calendar embed | Fastest initial setup; no custom calendar API backend | Limited visual control; verify mobile sizing and provide an open-calendar link |
-| Custom React agenda using Calendar API | Matches the site's branding; upcoming classes, day navigation, and optional class filters | Backend/cache integration and failure handling needed |
-
-Recommended target: custom branded agenda, with an open-Google-Calendar link and
-an embed as an optional interim solution. The embed is an option to ship sooner,
-not a second schedule for the owner to maintain.
+Use a custom branded React agenda backed by the Calendar API. The operator edits
+Google Calendar; the website renders the public events in our design. Retain an
+optional external open-calendar link. If the feed fails or becomes too old, show
+the current weekly timetable and a clear notice. A valid empty feed stays empty.
 
 For a public dedicated calendar, use public read access with a restricted API key
 where required by Google project configuration. For a private calendar, use a

@@ -47,12 +47,12 @@ The repository already contains `resources/photos/merchandise/`. Review those
 photos with the operator to learn which products, if any, are currently sold.
 Do not infer stock, sizes, prices, or availability from historical photos.
 
-| Stage | Visitor experience | Owner decisions needed |
-| --- | --- | --- |
-| Showcase | Browse current products and ask at the gym | Actual products, current photos, whether to publish prices |
-| Reservation / pickup inquiry | Request an item and size for gym pickup | Who confirms stock, pickup process, how unavailable items are handled |
-| Hosted checkout | Pay through a selected commerce provider | Catalog/variants, stock control, payment setup, pickup/shipping, refunds |
-| Full storefront | Browse, purchase, track fulfillment | Whether demand justifies inventory, order, and support operations |
+| Stage                        | Visitor experience                         | Owner decisions needed                                                   |
+| ---------------------------- | ------------------------------------------ | ------------------------------------------------------------------------ |
+| Showcase                     | Browse current products and ask at the gym | Actual products, current photos, whether to publish prices               |
+| Reservation / pickup inquiry | Request an item and size for gym pickup    | Who confirms stock, pickup process, how unavailable items are handled    |
+| Hosted checkout              | Pay through a selected commerce provider   | Catalog/variants, stock control, payment setup, pickup/shipping, refunds |
+| Full storefront              | Browse, purchase, track fulfillment        | Whether demand justifies inventory, order, and support operations        |
 
 Recommend a small showcase or pickup inquiry first if there is real inventory and
 interest. Keep checkout hosted by the eventual payment provider. Do not collect
