@@ -1,0 +1,46 @@
+{
+  "name": "knockout-fitness",
+  "version": "1.0.0",
+  "description": "Development files for www.knockoutfitnessmuaythai.com",
+  "scripts": {
+    "dev": "node --import tsx scripts/render-pages.tsx && vite --host 0.0.0.0",
+    "build": "node --import tsx scripts/render-pages.tsx && tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "tsc --noEmit && node --import tsx --test tests/feeds.test.ts && node --test tests/providers.test.mjs",
+    "test:e2e": "playwright test",
+    "sync:feeds": "node scripts/sync-feeds.mjs",
+    "format": "prettier --write src scripts tests docs README.md AGENTS.md *.json *.ts",
+    "format:check": "prettier --check src scripts tests docs README.md AGENTS.md *.json *.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagglerock/knockout-fitness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/bagglerock/knockout-fitness/issues"
+  },
+  "homepage": "https://github.com/bagglerock/knockout-fitness#readme",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

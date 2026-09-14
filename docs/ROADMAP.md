@@ -1,6 +1,6 @@
 # Delivery roadmap
 
-Status: planning complete; implementation has not started in this change.
+Status: React frontend and optional Node feed export worker implemented. Account activation, browser verification, and deployment remain open.
 
 ## 1. Establish the baseline
 
@@ -10,15 +10,15 @@ Status: planning complete; implementation has not started in this change.
 - [ ] Compare repository files and graphics against the actual live GoDaddy site.
 - [ ] Confirm current coaches, program offerings, contact details, and schedule, including the Saturday end time.
 
-These inputs need not block a local layout prototype using the original assets.
+These inputs did not block the frontend build. See [Deployment](DEPLOYMENT.md) for implemented behavior, validation limits, and activation steps.
 
 ## 2. Build the modern frontend
 
-- [ ] Scaffold React + TypeScript + Vite in this repository on a review branch.
-- [ ] Preserve original graphics and select a compatible marketing-page prerender approach.
-- [ ] Implement the responsive shared shell and Home, Coaches, Schedule, Photos, and Location/Contact pages.
+- [x] Scaffold React + TypeScript + Vite in this repository on a review branch.
+- [x] Preserve original graphics and select a compatible marketing-page prerender approach.
+- [x] Implement the responsive shared shell and Home, Coaches, Schedule, Photos, and Location/Contact pages.
 - [ ] Preserve legacy `.html` URLs and useful anchors; check direct visits and refreshes.
-- [ ] Add provider-independent schedule/gallery components with clearly labeled development fixtures and production fallback states.
+- [x] Add provider-independent schedule/gallery components with clearly labeled development fixtures and production fallback states.
 - [ ] Verify the visual design at phone, tablet, and desktop widths, keyboard operation, and reduced motion.
 
 Exit: reviewable local preview/build preserving the existing identity. No fake
@@ -31,7 +31,7 @@ live feed, invented timetable, or inert membership/shop buttons in production.
 - [ ] Select the backend after checking GoDaddy Node/PHP, scheduled job, outbound HTTPS, and private configuration capabilities.
 - [ ] Complete official Instagram authorization, cache handling, refresh/reconnection, and gallery fallback.
 - [ ] Have the operator create/choose the dedicated Google Calendar and approve its publication settings.
-- [ ] Connect the branded agenda; use an embed as an interim option if needed.
+- [ ] Activate the branded agenda feed, with the current weekly timetable as fallback.
 - [ ] Demonstrate a phone calendar edit and an Instagram post reaching the website without rebuilding it.
 - [ ] Verify provider outages, stale content, cancellation/recurrence behavior, and credential isolation.
 
@@ -57,14 +57,14 @@ display is not a reservation system.
 
 ## Inputs needed for activation
 
-| Input | Why it matters |
-| --- | --- |
-| Correct production domain and live-site baseline | Prevents deploying to the wrong destination or losing newer content |
-| Instagram account type and authorized operator | Handle supplied: `@Knock_Out_Fitness`; account access still needs verification |
-| Owner authorization to the Instagram app | Required for real account media access |
-| Dedicated calendar ID and sharing choice | Connects public class information without exposing a personal calendar |
-| GoDaddy runtime/scheduler information | Determines backend and refresh implementation |
-| Current schedule/contact/program details | Prevents publishing historical or incorrect business information |
-| Inquiry recipient and merchandise process | Needed only when those later features are selected |
+| Input                                            | Why it matters                                                                 |
+| ------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Correct production domain and live-site baseline | Prevents deploying to the wrong destination or losing newer content            |
+| Instagram account type and authorized operator   | Handle supplied: `@Knock_Out_Fitness`; account access still needs verification |
+| Owner authorization to the Instagram app         | Required for real account media access                                         |
+| Dedicated calendar ID and sharing choice         | Connects public class information without exposing a personal calendar         |
+| GoDaddy runtime/scheduler information            | Determines backend and refresh implementation                                  |
+| Current schedule/contact/program details         | Prevents publishing historical or incorrect business information               |
+| Inquiry recipient and merchandise process        | Needed only when those later features are selected                             |
 
 Never ask for passwords or tokens in chat or commit them to these documents.
