@@ -9,6 +9,8 @@ Read README.md, docs/ARCHITECTURE.md, and docs/DEPLOYMENT.md before changing the
 - Put business content in src/content.ts, not duplicated across JSX files.
 - Run the formatter; do not minify handwritten source to shorten files/functions.
 - HTML entry files are generated. Edit React source and run npm run build.
+- Show complete images with proportional sizing or contained frames. Keep the hero artwork
+  in normal flow; avoid negative offsets, cover cropping, and hover zoom that clips subjects.
 - Keep existing .html routes and source assets available.
 - Never commit provider credentials or publish them in browser configuration.
 - Fallback content must not pretend that Instagram or Calendar is connected.

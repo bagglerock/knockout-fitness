@@ -4,12 +4,17 @@
   isolation: isolate;
   overflow: hidden;
 }
+.hero-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: end;
+  gap: 24px;
+}
 .hero-art {
-  position: absolute;
-  z-index: -1;
-  inset: 0 -9% 0 35%;
-  background: url('/media/images/silouette-wide.png') center / auto 100% no-repeat;
-  mix-blend-mode: multiply;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  align-self: end;
 }
 .hero-content {
   padding-top: 67px;
@@ -33,7 +38,7 @@
   flex-shrink: 0;
 }
 .hero h1 {
-  font-size: clamp(5rem, 8.8vw, 9rem);
+  font-size: clamp(4rem, 7vw, 7rem);
   line-height: 0.87;
   letter-spacing: -1.5px;
   max-width: 720px;
@@ -129,11 +134,8 @@
 .program-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s;
-}
-.program-card:hover .program-image img {
-  transform: scale(1.035);
 }
 .program-number {
   position: absolute;
@@ -205,14 +207,14 @@
   color: white;
 }
 .community-photo {
-  min-height: 600px;
-  position: relative;
+  display: grid;
+  align-items: center;
+  min-width: 0;
 }
 .community-photo img {
-  height: 100%;
+  height: auto;
   width: 100%;
-  object-fit: cover;
-  position: absolute;
+  object-fit: contain;
   filter: saturate(0.8);
 }
 .community-copy {
@@ -243,28 +245,24 @@
   gap: 15px;
 }
 .gallery-image {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
   position: relative;
   overflow: hidden;
   aspect-ratio: 1/1.08;
-  background: #ddd;
+  background: var(--ink);
 }
 .gallery-image > img {
+  min-height: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s;
 }
-.gallery-image:hover > img {
-  transform: scale(1.05);
-}
 .gallery-image > span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 16px;
   color: white;
-  background: linear-gradient(transparent, #000b);
+  background: var(--ink);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
