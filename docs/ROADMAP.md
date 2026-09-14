@@ -26,7 +26,8 @@ live feed, invented timetable, or inert membership/shop buttons in production.
 
 ## 3. Connect phone-managed content
 
-- [ ] Identify the actual Instagram account, account type, and authorized operator.
+- [x] Record the user-supplied Instagram handle: [@Knock_Out_Fitness](https://www.instagram.com/knock_out_fitness/).
+- [ ] Verify the Instagram account type and authorized operator.
 - [ ] Select the backend after checking GoDaddy Node/PHP, scheduled job, outbound HTTPS, and private configuration capabilities.
 - [ ] Complete official Instagram authorization, cache handling, refresh/reconnection, and gallery fallback.
 - [ ] Have the operator create/choose the dedicated Google Calendar and approve its publication settings.
@@ -59,7 +60,7 @@ display is not a reservation system.
 | Input | Why it matters |
 | --- | --- |
 | Correct production domain and live-site baseline | Prevents deploying to the wrong destination or losing newer content |
-| Actual Instagram profile and account type | Location links cannot authorize an account feed |
+| Instagram account type and authorized operator | Handle supplied: `@Knock_Out_Fitness`; account access still needs verification |
 | Owner authorization to the Instagram app | Required for real account media access |
 | Dedicated calendar ID and sharing choice | Connects public class information without exposing a personal calendar |
 | GoDaddy runtime/scheduler information | Determines backend and refresh implementation |
