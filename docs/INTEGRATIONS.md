@@ -13,9 +13,14 @@ Instagram post. The original brand graphics and curated site photos remain local
 
 ### Account prerequisite
 
-The repository currently links to an Instagram **location page**, not an account
-profile. That location URL does not identify the authorized media owner. Obtain
-the actual gym handle and confirm who can authorize the account.
+The user supplied **@Knock_Out_Fitness** on September 14, 2026:
+[Instagram profile](https://www.instagram.com/knock_out_fitness/).
+Use this profile as the intended account for the feed and social links during the rebuild.
+The account type, account ID, and authorized operator still need verification.
+
+The existing HTML links to an Instagram **location page**, not this account
+profile. Replace those location links during the rebuild; a location URL cannot
+authorize the account feed.
 
 Meta's Instagram API with Instagram Login supports professional Business and
 Creator accounts. A personal account requires a different plan, such as conversion
