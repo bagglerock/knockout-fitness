@@ -10,6 +10,7 @@ function pageHtml(page: Page) {
 <html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#f5e60b" /><title>${meta.title} | Knockout Fitness</title>
 <meta name="description" content="${meta.description}" />
+<link rel="stylesheet" href="/src/style.css" />
 <link rel="icon" href="./media/images/9596014.png" type="image/png" />
 <noscript><style>.menu-button{display:none!important}.site-header nav{display:flex!important;position:static!important;flex-wrap:wrap}.header-inner{flex-wrap:wrap}</style></noscript>
 </head><body><div id="root">${renderToString(<App page={page} />)}</div><script type="module" src="/src/main.tsx"></script></body></html>\n`;
